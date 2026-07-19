@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AK.Fashion — Luxury Watches</title>
+<meta name="description" content="AK.Fashion — timeless luxury watches, crafted for those who value precision.">
+
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,500&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="top-brand-bar" id="topBrandBar">
+  <span class="top-brand-text">AK<em>FASHION</em></span>
+</div>
+
+<div class="scroll-progress" id="scrollProgress"></div>
+
+
+<header class="site-header" id="siteHeader">
+  <div class="header-inner">
+    <a href="#top" class="brand-mini">
+      <img src="assets/logo.jpg" alt="AK.Fashion logo" class="brand-mini-logo">
+      <span>AK.<em>Fashion</em></span>
+    </a>
+
+    <nav class="main-nav" id="mainNav">
+      <a href="#top">Home</a>
+      <a href="#shop">Shop</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <div class="header-actions">
+      <button class="cart-btn" id="cartToggle" aria-label="Open cart">
+        <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.6">
+          <path d="M3 4h2l2.4 12.4a2 2 0 0 0 2 1.6h7.2a2 2 0 0 0 2-1.6L20 8H6.2"/>
+          <circle cx="9.5" cy="20.5" r="1.2"/>
+          <circle cx="17" cy="20.5" r="1.2"/>
+        </svg>
+        <span class="cart-count" id="cartCount">0</span>
+      </button>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+
+<div id="mainView">
+
+
+<section class="hero" id="top">
+  <div class="hero-rings" aria-hidden="true"></div>
+
+  <div class="hero-content">
+   
+    <div class="hero-watch-wrap" aria-label="AK.Fashion signature chronograph, showing the current time">
+      <div class="watch-glow" aria-hidden="true"></div>
+      <div class="hero-watch-tilt" id="heroWatchTilt">
+      <svg class="hero-watch" viewBox="0 0 640 380" xmlns="http://www.w3.org/2000/svg" role="img">
+        <defs>
+          <linearGradient id="caseGold" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" stop-color="#f6e7ba"/>
+            <stop offset="45%" stop-color="#c6a15b"/>
+            <stop offset="100%" stop-color="#8a6c33"/>
+          </linearGradient>
+          <linearGradient id="chainGold" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" stop-color="#efdcac"/>
+            <stop offset="50%" stop-color="#c6a15b"/>
+            <stop offset="100%" stop-color="#8a6c33"/>
+          </linearGradient>
+          <radialGradient id="dialBlack" cx="42%" cy="36%" r="75%">
+            <stop offset="0%" stop-color="#302d29"/>
+            <stop offset="70%" stop-color="#171512"/>
+            <stop offset="100%" stop-color="#0b0a08"/>
+          </radialGradient>
+          <radialGradient id="crystalSheen" cx="34%" cy="24%" r="62%">
+            <stop offset="0%" stop-color="#ffffff" stop-opacity=".24"/>
+            <stop offset="60%" stop-color="#ffffff" stop-opacity="0"/>
+          </radialGradient>
+          <filter id="softDrop" x="-40%" y="-40%" width="180%" height="180%">
+            <feDropShadow dx="0" dy="12" stdDeviation="14" flood-color="#141210" flood-opacity=".3"/>
+          </filter>
+        </defs>
+
+      
+
+       
+        <g filter="url(#softDrop)">
+          <circle cx="320" cy="190" r="130" fill="url(#caseGold)"/>
+          <circle cx="320" cy="190" r="130" class="case-rim"/>
+          <circle cx="320" cy="190" r="113" fill="#0d0c0a"/>
+          <circle cx="320" cy="190" r="106" fill="url(#dialBlack)"/>
+
+          <line x1="320.0" y1="80.0" x2="320.0" y2="100.0" class="marker marker-main"/>
+          <line x1="375.0" y1="94.7" x2="369.5" y2="104.3" class="marker"/>
+          <line x1="415.3" y1="135.0" x2="405.7" y2="140.5" class="marker"/>
+          <line x1="430.0" y1="190.0" x2="410.0" y2="190.0" class="marker marker-main"/>
+          <line x1="415.3" y1="245.0" x2="405.7" y2="239.5" class="marker"/>
+          <line x1="375.0" y1="285.3" x2="369.5" y2="275.7" class="marker"/>
+          <line x1="320.0" y1="300.0" x2="320.0" y2="280.0" class="marker marker-main"/>
+          <line x1="265.0" y1="285.3" x2="270.5" y2="275.7" class="marker"/>
+          <line x1="224.7" y1="245.0" x2="234.3" y2="239.5" class="marker"/>
+          <line x1="210.0" y1="190.0" x2="230.0" y2="190.0" class="marker marker-main"/>
+          <line x1="224.7" y1="135.0" x2="234.3" y2="140.5" class="marker"/>
+          <line x1="265.0" y1="94.7" x2="270.5" y2="104.3" class="marker"/>
+
+          <text x="320" y="148" text-anchor="middle" class="dial-brand">AK.FASHION</text>
+          <text x="320" y="238" text-anchor="middle" class="dial-sub">SHOP NOW</text>
+
+          
+          <polygon points="315.8,190.0 319.4,165.6 320.0,132.0 320.6,165.6 324.2,190.0" class="hand hour-hand" id="hourHand"></polygon>
+          <polygon points="316.8,190.0 319.4,154.7 320.0,106.0 320.6,154.7 323.2,190.0" class="hand minute-hand" id="minuteHand"></polygon>
+          <line x1="320" y1="206" x2="320" y2="94" class="hand second-hand" id="secondHand"></line>
+          <circle cx="320" cy="190" r="6" class="clock-pin"></circle>
+
+          <circle id="crystalGlint" cx="320" cy="190" r="106" fill="url(#crystalSheen)"/>
+        </g>
+      </svg>
+      </div>
+    </div>
+
+    <p class="hero-eyebrow">Est. for those who count every second</p>
+    <h1 class="hero-title">Time, worn with intent.</h1>
+
+    <a href="#shop" class="btn btn-gold">Shop the Collection</a>
+
+    <div class="hero-stats">
+      <div class="hero-stat"><strong><span class="count" data-count-to="1200">0</span>+</strong><span>Pieces Delivered</span></div>
+      <div class="hero-stat-divider"></div>
+      <div class="hero-stat"><strong><span class="count" data-count-to="4.9" data-decimal="1">0</span><span class="star">★</span></strong><span>Customer Rating</span></div>
+      <div class="hero-stat-divider"></div>
+      <div class="hero-stat"><strong><span class="count" data-count-to="100">0</span>%</strong><span>Authentic Materials</span></div>
+    </div>
+  </div>
+</section>
+
+
+<section class="trust-bar">
+  <div class="trust-inner">
+    <div class="trust-item">
+      <svg viewBox="0 0 24 24"><path d="M12 2l7 3v6c0 5-3.4 8.9-7 11-3.6-2.1-7-6-7-11V5l7-3Z"/></svg>
+      <span>Certified Authentic</span>
+    </div>
+    <div class="trust-item">
+      <svg viewBox="0 0 24 24"><path d="M3 7h11v10H3zM14 10h4l3 3v4h-7zM6 20a2 2 0 1 0 0-4 2 2 0 0 0 0 4Zm12 0a2 2 0 1 0 0-4 2 2 0 0 0 0 4Z"/></svg>
+      <span>Fast, Tracked Delivery</span>
+    </div>
+    <div class="trust-item">
+      <svg viewBox="0 0 24 24"><path d="M12 22s8-4.5 8-11V5l-8-3-8 3v6c0 6.5 8 11 8 11Z"/></svg>
+      <span>1-Year Warranty</span>
+    </div>
+    <div class="trust-item">
+      <svg viewBox="0 0 24 24"><path d="M3 6h18M3 12h18M3 18h18" stroke-linecap="round"/></svg>
+      <span>Cash on Delivery</span>
+    </div>
+  </div>
+</section>
+
+<section class="shop" id="shop">
+  <div class="section-head reveal">
+    <span class="eyebrow">The Collection</span>
+    <h2>Signature Timepieces</h2>
+    <p>Each watch is finished by hand and paired with a lifetime of intent. Add to your cart and checkout instantly over WhatsApp.</p>
+  </div>
+
+  <div class="shop-toolbar reveal">
+    <div class="filter-bar">
+      <input type="search" id="shopSearch" placeholder="Search the collection…" aria-label="Search products">
+      <span class="results-count" id="resultsCount"></span>
+    </div>
+    <div class="cat-strip" id="catStrip" role="tablist" aria-label="Filter by category"></div>
+  </div>
+
+  <div class="product-grid" id="productGrid">
+
+  </div>
+</section>
+
+
+<section class="promo-band">
+  <div class="promo-inner">
+    <span class="eyebrow eyebrow-light">Limited Batch</span>
+    <h2>Every piece is numbered.<br>Once a batch sells out, it's gone.</h2>
+    <a href="#shop" class="btn btn-gold-outline">Browse While It Lasts</a>
+  </div>
+</section>
+
+
+<section class="about" id="about">
+  <div class="about-inner">
+    <div class="about-text reveal">
+      <span class="eyebrow">Our Craft</span>
+      <h2>Gold on the outside. Precision within.</h2>
+      <p>AK.Fashion was built on one idea: luxury should feel earned, not loud. Every case, link, and hand on our watches is chosen for how it ages — not just how it photographs on day one.</p>
+      <p>We work in small batches, so every piece leaving our hands gets the attention a watch is supposed to get.</p>
+    </div>
+    <div class="about-visual reveal" aria-hidden="true">
+      <div class="about-ring"></div>
+    </div>
+  </div>
+</section>
+
+</div>
+
+
+<section class="product-page" id="productView" hidden>
+  <div class="pp-topbar">
+    <button class="pp-back" id="qvBack">
+      <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 5l-7 7 7 7"/></svg>
+      Back to Shop
+    </button>
+  </div>
+
+  <div class="qv-body">
+    <div class="qv-media">
+      <span class="qv-tag" id="qvTag"></span>
+
+      <button class="qv-nav qv-nav-prev" id="qvPrev" aria-label="Previous photo">
+        <svg viewBox="0 0 24 24"><path d="M15 5l-7 7 7 7" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </button>
+      <img id="qvImage" src="" alt="">
+      <button class="qv-nav qv-nav-next" id="qvNext" aria-label="Next photo">
+        <svg viewBox="0 0 24 24"><path d="M9 5l7 7-7 7" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </button>
+
+      <button class="qv-video-btn" id="qvVideoBtn">
+        <svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+        Watch Video
+      </button>
+
+      <div class="qv-video-wrap" id="qvVideoWrap">
+        <button class="qv-video-close" id="qvVideoClose" aria-label="Close video">&times;</button>
+        <video id="qvVideo" controls playsinline></video>
+      </div>
+
+      <div class="qv-thumbs" id="qvThumbs"></div>
+    </div>
+    <div class="qv-info">
+      <h2 id="qvName"></h2>
+      <p class="qv-price" id="qvPrice"></p>
+      <p class="qv-desc" id="qvDesc"></p>
+
+      <div class="qv-qty">
+        <span>Quantity</span>
+        <div class="qty-control">
+          <button id="qvMinus">−</button>
+          <span id="qvQtyVal">1</span>
+          <button id="qvPlus">+</button>
+        </div>
+      </div>
+
+      <button class="btn btn-gold qv-add" id="qvAddBtn">Add to Bag</button>
+      <button class="btn btn-whatsapp qv-wa" id="qvWaBtn">
+        <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.71.45 3.38 1.3 4.85L2.05 22l5.36-1.4a9.9 9.9 0 0 0 4.63 1.18h.01c5.46 0 9.9-4.45 9.9-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2Zm0 18.13h-.01a8.2 8.2 0 0 1-4.19-1.15l-.3-.18-3.18.83.85-3.1-.2-.32a8.22 8.22 0 0 1-1.26-4.4c0-4.55 3.71-8.26 8.28-8.26 2.21 0 4.29.86 5.85 2.43a8.2 8.2 0 0 1 2.42 5.84c0 4.56-3.71 8.26-8.26 8.26Zm4.53-6.19c-.25-.12-1.47-.72-1.7-.8-.23-.08-.39-.12-.56.13-.17.24-.64.8-.78.96-.14.17-.29.19-.53.06-.25-.12-1.05-.39-2-1.23-.74-.66-1.24-1.48-1.38-1.72-.14-.25-.02-.38.11-.5.11-.11.25-.29.37-.43.12-.15.16-.25.24-.41.08-.17.04-.31-.02-.43-.06-.12-.56-1.34-.76-1.84-.2-.48-.4-.42-.56-.42-.14-.01-.31-.01-.48-.01a.92.92 0 0 0-.67.31c-.23.25-.87.85-.87 2.08s.9 2.41 1.02 2.58c.12.17 1.77 2.7 4.29 3.79.6.26 1.07.42 1.43.53.6.19 1.15.16 1.58.1.48-.07 1.47-.6 1.68-1.18.21-.58.21-1.07.15-1.18-.06-.1-.23-.16-.48-.28Z"/></svg>
+        Checkout via WhatsApp
+      </button>
+    </div>
+  </div>
+
+
+  <div class="qv-suggestions">
+    <h4>More Watches</h4>
+    <div class="qv-suggestion-row" id="qvSuggestions"></div>
+  </div>
+</section>
+
+
+<footer class="site-footer" id="contact">
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <img src="assets/logo.jpg" alt="AK.Fashion" class="footer-logo">
+      <p>Luxury watches, chains &amp; rings — delivered with a message, not just a box.</p>
+    </div>
+
+    <div class="footer-col">
+      <h4>Shop</h4>
+      <a href="#shop">All Watches</a>
+      <a href="#shop">New Arrivals</a>
+      <a href="#shop">Best Sellers</a>
+    </div>
+
+    <div class="footer-col">
+      <h4>Contact</h4>
+      <a id="footerWhatsapp" href="#" target="_blank" rel="noopener">WhatsApp Us</a>
+      <a href="mailto:unique.x.fashion000@gmail.com">Gmail</a>
+      <span class="footer-note">Lahore, Pakistan</span>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>&copy; <span id="year"></span> AK.Fashion. All rights reserved.</span>
+  </div>
+</footer>
+
+
+<div class="cart-overlay" id="cartOverlay"></div>
+<aside class="cart-drawer" id="cartDrawer">
+  <div class="cart-head">
+    <h3>Your Bag</h3>
+    <button id="cartClose" aria-label="Close cart">&times;</button>
+  </div>
+
+  <div class="cart-items" id="cartItems">
+    
+  </div>
+
+  <div class="cart-footer">
+    <div class="cart-total-row">
+      <span>Total</span>
+      <span id="cartTotal">Rs 0</span>
+    </div>
+    <button class="btn btn-whatsapp" id="checkoutBtn">
+      <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.71.45 3.38 1.3 4.85L2.05 22l5.36-1.4a9.9 9.9 0 0 0 4.63 1.18h.01c5.46 0 9.9-4.45 9.9-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2Zm0 18.13h-.01a8.2 8.2 0 0 1-4.19-1.15l-.3-.18-3.18.83.85-3.1-.2-.32a8.22 8.22 0 0 1-1.26-4.4c0-4.55 3.71-8.26 8.28-8.26 2.21 0 4.29.86 5.85 2.43a8.2 8.2 0 0 1 2.42 5.84c0 4.56-3.71 8.26-8.26 8.26Zm4.53-6.19c-.25-.12-1.47-.72-1.7-.8-.23-.08-.39-.12-.56.13-.17.24-.64.8-.78.96-.14.17-.29.19-.53.06-.25-.12-1.05-.39-2-1.23-.74-.66-1.24-1.48-1.38-1.72-.14-.25-.02-.38.11-.5.11-.11.25-.29.37-.43.12-.15.16-.25.24-.41.08-.17.04-.31-.02-.43-.06-.12-.56-1.34-.76-1.84-.2-.48-.4-.42-.56-.42-.14-.01-.31-.01-.48-.01a.92.92 0 0 0-.67.31c-.23.25-.87.85-.87 2.08s.9 2.41 1.02 2.58c.12.17 1.77 2.7 4.29 3.79.6.26 1.07.42 1.43.53.6.19 1.15.16 1.58.1.48-.07 1.47-.6 1.68-1.18.21-.58.21-1.07.15-1.18-.06-.1-.23-.16-.48-.28Z"/></svg>
+      Checkout via WhatsApp
+    </button>
+    <p class="cart-empty-note" id="cartEmptyNote">Your bag is empty — add a watch to get started.</p>
+  </div>
+</aside>
+
+
+<a id="waFloat" class="wa-float" href="#" target="_blank" rel="noopener" aria-label="Chat with us on WhatsApp">
+  <svg viewBox="0 0 24 24" width="26" height="26" fill="currentColor"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.71.45 3.38 1.3 4.85L2.05 22l5.36-1.4a9.9 9.9 0 0 0 4.63 1.18h.01c5.46 0 9.9-4.45 9.9-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2Zm0 18.13h-.01a8.2 8.2 0 0 1-4.19-1.15l-.3-.18-3.18.83.85-3.1-.2-.32a8.22 8.22 0 0 1-1.26-4.4c0-4.55 3.71-8.26 8.28-8.26 2.21 0 4.29.86 5.85 2.43a8.2 8.2 0 0 1 2.42 5.84c0 4.56-3.71 8.26-8.26 8.26Zm4.53-6.19c-.25-.12-1.47-.72-1.7-.8-.23-.08-.39-.12-.56.13-.17.24-.64.8-.78.96-.14.17-.29.19-.53.06-.25-.12-1.05-.39-2-1.23-.74-.66-1.24-1.48-1.38-1.72-.14-.25-.02-.38.11-.5.11-.11.25-.29.37-.43.12-.15.16-.25.24-.41.08-.17.04-.31-.02-.43-.06-.12-.56-1.34-.76-1.84-.2-.48-.4-.42-.56-.42-.14-.01-.31-.01-.48-.01a.92.92 0 0 0-.67.31c-.23.25-.87.85-.87 2.08s.9 2.41 1.02 2.58c.12.17 1.77 2.7 4.29 3.79.6.26 1.07.42 1.43.53.6.19 1.15.16 1.58.1.48-.07 1.47-.6 1.68-1.18.21-.58.21-1.07.15-1.18-.06-.1-.23-.16-.48-.28Z"/></svg>
+</a>
+<button id="scrollTopBtn" class="scroll-top-btn" aria-label="Back to top">
+  <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
+</button>
+
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<script src="products.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
