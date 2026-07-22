@@ -768,8 +768,9 @@ function buildBuyNowReceipt(formData){
     `Order Total: ${formatPrice(buyNowProduct.price * buyNowQty)}\n\n` +
     `Customer Name: ${formData.get("Full Name")}\n` +
     `Phone: ${formData.get("Phone Number")}\n` +
-    `Email: ${formData.get("Email")}\n` +
-    `Delivery Address: ${formData.get("Delivery Address")}\n`
+    `Delivery Address: ${formData.get("Delivery Address")}\n` +
+    `City: ${formData.get("City")}\n` +
+    `Postal Code: ${formData.get("Postal Code")}\n`
   );
 }
 

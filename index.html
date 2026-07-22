@@ -412,13 +412,53 @@
       <input type="tel" name="Phone Number" id="bnPhone" required placeholder="03XX XXXXXXX" autocomplete="tel">
     </label>
     <label class="bn-field">
-      <span>Email Address</span>
-      <input type="email" name="Email" id="bnEmail" required placeholder="you@email.com" autocomplete="email">
-    </label>
-    <label class="bn-field">
       <span>Delivery Address</span>
-      <textarea name="Delivery Address" id="bnAddress" required rows="3" placeholder="House #, street, area, city" autocomplete="street-address"></textarea>
+      <textarea name="Delivery Address" id="bnAddress" required rows="3" placeholder="House #, street, area" autocomplete="street-address"></textarea>
     </label>
+    <div class="bn-row">
+      <label class="bn-field">
+        <span>City</span>
+        <select name="City" id="bnCity" required autocomplete="address-level2">
+          <option value="" disabled selected>Select your city</option>
+          <option>Karachi</option>
+          <option>Lahore</option>
+          <option>Islamabad</option>
+          <option>Rawalpindi</option>
+          <option>Faisalabad</option>
+          <option>Multan</option>
+          <option>Peshawar</option>
+          <option>Quetta</option>
+          <option>Sialkot</option>
+          <option>Gujranwala</option>
+          <option>Hyderabad</option>
+          <option>Bahawalpur</option>
+          <option>Sargodha</option>
+          <option>Sukkur</option>
+          <option>Larkana</option>
+          <option>Sheikhupura</option>
+          <option>Rahim Yar Khan</option>
+          <option>Jhang</option>
+          <option>Dera Ghazi Khan</option>
+          <option>Gujrat</option>
+          <option>Sahiwal</option>
+          <option>Wah Cantonment</option>
+          <option>Mardan</option>
+          <option>Kasur</option>
+          <option>Okara</option>
+          <option>Mingora</option>
+          <option>Nawabshah</option>
+          <option>Chiniot</option>
+          <option>Kotri</option>
+          <option>Abbottabad</option>
+          <option>Muzaffarabad</option>
+          <option>Other</option>
+        </select>
+      </label>
+      <label class="bn-field">
+        <span>Postal Code</span>
+        <input type="text" name="Postal Code" id="bnPostal" required placeholder="e.g. 54000" inputmode="numeric" pattern="[0-9]{4,5}" maxlength="5" autocomplete="postal-code">
+      </label>
+    </div>
 
     <div class="bn-total-row">
       <span>Total</span>

@@ -740,15 +740,23 @@ p{ margin:0; }
   display:flex; flex-direction:column; gap:.4rem;
   font-size:.72rem; letter-spacing:.08em; text-transform:uppercase; color:#7a746a; font-weight:600;
 }
-.bn-field input, .bn-field textarea{
+.bn-field input, .bn-field textarea, .bn-field select{
   font-family: var(--font-body); font-size:.95rem; color: var(--black);
   border: 1px solid var(--line); border-radius: var(--radius-sm);
   padding: .7rem .85rem; text-transform:none; letter-spacing:normal; font-weight:400;
   transition: border-color .24s var(--ease-quick);
   resize: vertical;
+  background: #fff;
 }
-.bn-field input:focus, .bn-field textarea:focus{ outline:none; border-color: var(--gold); }
+.bn-field input:focus, .bn-field textarea:focus, .bn-field select:focus{ outline:none; border-color: var(--gold); }
 .bn-botcheck{ position:absolute; opacity:0; pointer-events:none; height:0; width:0; }
+
+/* City + Postal Code sit side by side on wider screens */
+.bn-row{ display:flex; gap:.8rem; }
+.bn-row .bn-field{ flex:1; min-width:0; }
+@media (max-width:480px){
+  .bn-row{ flex-direction:column; }
+}
 
 .bn-total-row{
   display:flex; justify-content:space-between; align-items:baseline;
@@ -995,6 +1003,17 @@ body.cart-open .scroll-top-btn{ right:auto; left:1.6rem; }
 .qv-add.added{ animation: softPop .5s var(--ease-soft); background: var(--gold); border-color: var(--gold); color: var(--black); }
 
 .qv-buy{ width:100%; margin-bottom:.7rem; }
+.qv-buy.btn-gold-outline{
+  background: #25d366;
+  color: #fff;
+  border-color: #1f9e56;
+}
+.qv-buy.btn-gold-outline:hover{
+  background: #1fb757;
+  border-color: #1fb757;
+  color: #fff;
+  box-shadow: var(--shadow-soft);
+}
 
 /* "More Watches" — a real list at the bottom of the product page */
 .qv-suggestions{
