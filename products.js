@@ -1,4 +1,39 @@
+/* =====================================================================
+   AK.FASHION — PRODUCT CATALOG
+   =====================================================================
+   HOW TO ADD A NEW PRODUCT
+   ------------------------------------------------------------------
+   1. Copy one whole { ... } block below (including the comma after it).
+   2. Paste it into the list, giving it a unique "id".
+   3. Change name, price and description.
+   4. Replace photo1 / photo2 with your own image paths (see notes).
+   5. Optionally set a video path, or leave it as null.
+   6. Save the file and refresh the page — no other file needs to change.
 
+   HOW TO REMOVE A PRODUCT
+   ------------------------------------------------------------------
+   Delete its whole { ... } block (and the id stays free for reuse).
+
+   ABOUT IMAGES & VIDEO
+   ------------------------------------------------------------------
+   - Put your real photos/videos inside the /assets/products/ folder,
+     then point photo1/photo2/video at them, e.g. "assets/products/gold-chrono-1.jpg".
+   - Until you add your own files, this catalog uses free placeholder
+     images (picsum.photos) so the site looks complete out of the box.
+   - photo1 shows by default on the card; photo2 fades in on hover —
+     great for a "front / side" or "on-wrist" shot.
+   - video is optional. Leave it as null if you don't have one yet;
+     the card will simply not show the video toggle for that product.
+   OPTIONAL: "tag"
+   ------------------------------------------------------------------
+   Add a short tag like "Best Seller" or "New" to badge a product on
+   its card and in quick view. Leave it out (or set to null) for no badge.
+
+   "category"
+   ------------------------------------------------------------------
+   Must match one of the entries in CATEGORIES just below (spelled
+   exactly the same). Powers the filter chips above the shop grid.
+   ===================================================================== */
 
 const CATEGORIES = ["Watches", "Chains", "Rings"];
 
@@ -7,7 +42,7 @@ const PRODUCTS = [
     id: "watch1",
     category: "Watches",
     name: "Cartier Tank Brown Color",
-    price: 2600,         
+    price: 2600,          // in PKR — shown as "Rs 24,999"
     description: "Iconic Design",
     tag: "Best Seller",
     photo1: "assets/products/watch1/1.jpeg",
