@@ -1,0 +1,41 @@
+{
+  "siteName": "AKFASHION",
+  "siteTagline": "Timeless Luxury Timepieces",
+  "whatsappNumber": "9203037252700",
+  "whatsappMessage": "Hello AKFASHION, I have a question about your watches",
+  "contactEmail": "unique.x.fashion000@gmail.com",
+  "phone": "+92 303 7252700",
+  "phoneHours": "Always",
+  "address": "Non",
+  "instagramUrl": "https://www.instagram.com/ak_.fashion.000?igsi=bHZ1dmptejlhNGI5",
+  "tiktokUrl": "https://www.tiktok.com/@ak.fashion000?_r=1&_t=ZS-998NiSy7V0G",
+  "facebookUrl": "https://www.facebook.com/share/14mZgZfcpyN/",
+  "youtubeUrl": "",
+  "standardShipping": "250",
+  "freeShippingThreshold": "6500",
+  "about": {
+    "eyebrow": "Our Heritage",
+    "titlePrefix": "The Art of",
+    "titleHighlight": "Swiss Watchmaking",
+    "description": "Since 1974, AKFASHION has been at the forefront of haute horlogerie. Our master craftsmen blend traditional techniques with cutting-edge innovation to create timepieces that transcend generations.",
+    "image": "images/about-1787523956872.jpg",
+    "stampYear": "50+",
+    "stampTitle": "Years of Excellence",
+    "stampSubtext": "Master watchmakers",
+    "buttonText": "Discover Heritage",
+    "features": [
+      {
+        "title": "Swiss Precision Movement",
+        "text": "Each timepiece houses a meticulously assembled Swiss automatic movement, certified for exceptional accuracy."
+      },
+      {
+        "title": "Lifetime Craftsmanship",
+        "text": "From sapphire crystal to 18k gold accents, only the finest materials grace our master creations."
+      },
+      {
+        "title": "Certified Authenticity",
+        "text": "Every AKFASHION timepiece comes with a certificate of authenticity and a 5-year international warranty."
+      }
+    ]
+  }
+}

@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0" />
+<meta name="description" content="AKFASHION - Contact us via WhatsApp, Email, Instagram, or TikTok. Get in touch with our luxury watch experts." />
+<title>AKFASHION — Contact Us</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&family=Inter:wght@300;400;500;600;700&family=Cormorant+Garamond:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<style>
+.contact-page-wrap{padding:4rem 2rem 0;}
+.contact-hero{
+  text-align:center;margin-bottom:6rem;
+}
+.contact-hero h1{
+  font-family:var(--serif);font-size:clamp(2.5rem,5vw,4rem);
+  font-weight:700;line-height:1.1;margin-bottom:1rem;color:var(--black);
+}
+.contact-hero p{
+  font-size:1.1rem;color:var(--gray);max-width:600px;margin:0 auto 1rem;line-height:1.8;
+}
+
+.contact-methods{
+  display:grid;grid-template-columns:repeat(2,1fr);gap:2rem;
+  max-width:1000px;margin:0 auto 6rem;
+}
+
+.contact-card{
+  background:var(--off-white);border-radius:12px;padding:2.5rem;
+  text-align:center;transition:all 0.3s var(--transition);
+  border:1px solid var(--light-gray);
+}
+.contact-card:hover{
+  transform:translateY(-8px);box-shadow:var(--shadow);
+  border-color:var(--gold);
+}
+
+.contact-card-icon{
+  width:80px;height:80px;border-radius:50%;background:var(--gold-pale);
+  display:flex;align-items:center;justify-content:center;margin:0 auto 1.5rem;
+}
+.contact-card-icon svg{
+  width:40px;height:40px;stroke:var(--gold-dark);fill:none;stroke-width:1.5;
+}
+
+.contact-card h3{
+  font-family:var(--serif);font-size:1.5rem;font-weight:600;
+  margin-bottom:0.8rem;color:var(--black);
+}
+
+.contact-card p{
+  color:var(--gray);margin-bottom:1.5rem;line-height:1.6;font-size:0.95rem;
+}
+
+.contact-card-btn{
+  display:inline-flex;align-items:center;justify-content:center;gap:0.6rem;
+  padding:0.9rem 1.8rem;border-radius:6px;font-weight:600;
+  font-size:0.95rem;transition:all 0.3s;text-decoration:none;
+  border:1.5px solid;cursor:pointer;
+}
+
+.whatsapp-btn{
+  background:#25D366;color:white;border-color:#25D366;
+}
+.whatsapp-btn:hover{background:#1DA851;border-color:#1DA851;}
+
+.email-btn{
+  background:var(--gold);color:white;border-color:var(--gold);
+}
+.email-btn:hover{background:var(--gold-dark);border-color:var(--gold-dark);}
+
+.instagram-btn{
+  background:linear-gradient(45deg,#f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);
+  color:white;border-color:transparent;
+}
+.instagram-btn:hover{opacity:0.9;}
+
+.tiktok-btn{
+  background:var(--black);color:white;border-color:var(--black);
+}
+.tiktok-btn:hover{background:var(--charcoal);border-color:var(--charcoal);}
+
+.contact-card-btn svg{
+  width:20px;height:20px;
+}
+
+.contact-info-section{
+  background:var(--black);color:var(--white);padding:4rem 2rem;margin:0 -2rem 6rem;
+}
+
+.info-grid{
+  display:grid;grid-template-columns:repeat(3,1fr);gap:2rem;
+  max-width:1200px;margin:0 auto;
+}
+
+.info-item{text-align:center;}
+.info-item-icon{
+  width:60px;height:60px;border-radius:50%;background:var(--gold-pale);
+  display:flex;align-items:center;justify-content:center;margin:0 auto 1rem;
+}
+.info-item-icon svg{
+  width:28px;height:28px;stroke:var(--gold-dark);fill:none;stroke-width:1.5;
+}
+
+.info-item h4{
+  font-family:var(--serif);font-size:1.2rem;font-weight:600;margin-bottom:0.5rem;
+}
+.info-item p{
+  font-size:0.95rem;color:var(--gold-light);line-height:1.6;
+}
+
+.faq-section{
+  max-width:900px;margin:0 auto 6rem;
+}
+.faq-section .section-head{margin-bottom:3rem;}
+
+.faq-item{
+  background:var(--off-white);border-radius:8px;padding:1.5rem;
+  margin-bottom:1rem;border-left:3px solid var(--gold);
+}
+.faq-item h4{
+  font-family:var(--serif);font-size:1.05rem;font-weight:600;
+  margin-bottom:0.5rem;color:var(--black);
+}
+.faq-item p{
+  font-size:0.9rem;color:var(--gray);line-height:1.6;
+}
+
+@media(max-width:768px){
+  .contact-methods{grid-template-columns:1fr;}
+  .info-grid{grid-template-columns:1fr;}
+  .contact-page-wrap{padding:2rem 1rem 0;}
+  .contact-hero h1{font-size:2rem;}
+  .contact-hero p{font-size:1rem;}
+}
+</style>
+</head>
+<body>
+
+<div id="loader">
+  <div class="loader-logo">AKFASHION</div>
+  <div class="loader-bar"></div>
+</div>
+
+<header class="header" id="header">
+  <div class="header-inner">
+    <a href="index.html" class="logo">AKFASHION</a>
+    <nav class="nav">
+      <a href="index.html#home">Home</a>
+      <a href="index.html#catalog">Collection</a>
+      <a href="index.html#about">Heritage</a>
+      <a href="index.html#testimonials">Reviews</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <div class="header-actions">
+      <button class="icon-btn" onclick="toggleSearch()" aria-label="Search">
+        <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+      </button>
+      <button class="icon-btn" aria-label="Wishlist">
+        <svg viewBox="0 0 24 24"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+      </button>
+      <button class="icon-btn" onclick="toggleCart()" aria-label="Cart">
+        <svg viewBox="0 0 24 24"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
+        <span class="cart-count" id="cartCount">0</span>
+      </button>
+      <button class="icon-btn menu-toggle" onclick="toggleMobileMenu()" aria-label="Menu">
+        <svg viewBox="0 0 24 24"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+<div class="search-overlay" id="searchOverlay" onclick="closeSearchOverlay(event)">
+  <div class="search-container">
+    <div class="search-wrap">
+      <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+      <input type="text" class="search-input" id="searchInput" placeholder="Search for watches, collections, brands..." oninput="handleSearch(this.value)" />
+      <button class="search-close" onclick="toggleSearch()">✕</button>
+    </div>
+  </div>
+</div>
+
+<div class="mobile-menu" id="mobileMenu">
+  <div class="mobile-menu-header">
+    <span class="logo">AKFASHION</span>
+    <button class="mobile-menu-close" onclick="toggleMobileMenu()">
+      <svg viewBox="0 0 24 24"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+    </button>
+  </div>
+  <nav class="mobile-nav">
+    <a href="index.html#home">Home</a>
+    <a href="index.html#catalog">Collection</a>
+    <a href="index.html#about">Heritage</a>
+    <a href="index.html#testimonials">Reviews</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+</div>
+
+<div class="contact-page-wrap">
+  <div class="contact-hero">
+    <h1>Get in Touch</h1>
+    <p>Have questions about our luxury timepieces? We're here to help. Reach out to us through any of your preferred channels and we'll respond promptly.</p>
+  </div>
+
+  <div class="contact-methods">
+    <div class="contact-card">
+      <div class="contact-card-icon">
+        <svg viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981z"/></svg>
+      </div>
+      <h3>WhatsApp</h3>
+      <p>Chat with us instantly on WhatsApp for quick inquiries and order support.</p>
+      <a href="https://wa.me/1234567890?text=Hello%20AKFASHION%2C%20I%20have%20a%20question%20about%20your%20watches" class="contact-card-btn whatsapp-btn js-whatsapp-link" target="_blank">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981z"/></svg>
+        Message on WhatsApp
+      </a>
+    </div>
+
+    <div class="contact-card">
+      <div class="contact-card-icon">
+        <svg viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+      </div>
+      <h3>Email</h3>
+      <p>Send us an email and we'll get back to you within 24 hours.</p>
+      <a href="mailto:concierge@akfashion.com" class="contact-card-btn email-btn">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+        Send Email
+      </a>
+    </div>
+
+    <div class="contact-card">
+      <div class="contact-card-icon">
+        <svg viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5" ry="5" fill="none" stroke="currentColor" stroke-width="1.5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" fill="none" stroke="currentColor" stroke-width="1.5"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5" stroke="currentColor" stroke-width="1.5"/></svg>
+      </div>
+      <h3>Instagram</h3>
+      <p>Follow us for the latest collection launches and exclusive updates.</p>
+      <a href="https://instagram.com/akfashion" class="contact-card-btn instagram-btn js-social-instagram" target="_blank">
+        <svg viewBox="0 0 24 24" fill="currentColor"><rect x="2" y="2" width="20" height="20" rx="5" ry="5" fill="none" stroke="white" stroke-width="1.5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" fill="none" stroke="white" stroke-width="1.5"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5" stroke="white" stroke-width="1.5"/></svg>
+        Follow on Instagram
+      </a>
+    </div>
+
+    <div class="contact-card">
+      <div class="contact-card-icon">
+        <svg viewBox="0 0 24 24"><path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"/></svg>
+      </div>
+      <h3>TikTok</h3>
+      <p>Watch our behind-the-scenes content and luxury lifestyle videos.</p>
+      <a href="https://tiktok.com/@akfashion" class="contact-card-btn tiktok-btn js-social-tiktok" target="_blank">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2z"/></svg>
+        Follow on TikTok
+      </a>
+    </div>
+  </div>
+</div>
+
+<div class="contact-info-section">
+  <div class="info-grid">
+    <div class="info-item">
+      <div class="info-item-icon">
+        <svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+      </div>
+      <h4>Address</h4>
+      <p class="js-contact-address-block">42 Rue du Rhône<br/>1204 Geneva<br/>Switzerland</p>
+    </div>
+    <div class="info-item">
+      <div class="info-item-icon">
+        <svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+      </div>
+      <h4>Phone</h4>
+      <p><span class="js-contact-phone">+41 22 555 0100</span><br/><span class="js-contact-phone-hours">Available 9am-6pm CET, Monday-Friday</span></p>
+    </div>
+    <div class="info-item">
+      <div class="info-item-icon">
+        <svg viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+      </div>
+      <h4>Email</h4>
+      <p><span class="js-contact-email">concierge@akfashion.com</span><br/>Response within<br/>24 hours</p>
+    </div>
+  </div>
+</div>
+
+<section class="faq-section">
+  <div class="section-head reveal">
+    <span class="section-eyebrow">Have Questions?</span>
+    <h2 class="section-title">Frequently Asked <span class="gold">Questions</span></h2>
+  </div>
+  <div class="faq-item">
+    <h4>What is your return policy?</h4>
+    <p>We offer a 30-day return policy on all unworn watches. Watches must be in original condition with all documentation. Simply contact us via WhatsApp or email to initiate a return.</p>
+  </div>
+  <div class="faq-item">
+    <h4>How long does shipping take?</h4>
+    <p>Shipping within Pakistan takes 3-5 business days. International orders take 7-14 business days depending on the destination. Tracking information is provided with every order.</p>
+  </div>
+  <div class="faq-item">
+    <h4>Are your watches authenticated?</h4>
+    <p>Yes, every AKFASHION watch comes with a certificate of authenticity. We guarantee 100% authentic, premium quality timepieces with Swiss movements and the finest materials.</p>
+  </div>
+  <div class="faq-item">
+    <h4>What warranty coverage do I get?</h4>
+    <p>All AKFASHION watches include a 5-year international warranty covering mechanical defects. Damage from misuse or accidents is not covered. Warranty cards are included with your purchase.</p>
+  </div>
+  <div class="faq-item">
+    <h4>Can I customize my watch?</h4>
+    <p>We offer limited customization options on select models. Contact our concierge team via WhatsApp or email to discuss personalization options for your timepiece.</p>
+  </div>
+  <div class="faq-item">
+    <h4>Do you offer payment plans?</h4>
+    <p>Yes, we accept multiple payment options including installment plans for purchases over a certain amount. Discuss available options with our team when placing your order.</p>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="footer-inner">
+    <div class="footer-grid">
+      <div class="footer-col">
+        <span class="footer-logo">AKFASHION</span>
+        <p class="footer-about">Crafting timeless luxury timepieces since 1974. Every AKFASHION watch is a masterwork of precision, heritage, and uncompromising elegance.</p>
+        <div class="social-links">
+          <a class="social-link js-social-instagram" href="https://instagram.com/akfashion" aria-label="Instagram"><svg viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5" ry="5" fill="none" stroke="white" stroke-width="1.5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" fill="none" stroke="white" stroke-width="1.5"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5" stroke="white" stroke-width="1.5"/></svg></a>
+          <a class="social-link js-social-facebook" href="#" aria-label="Facebook"><svg viewBox="0 0 24 24"><path d="M18 2h-3a5.5 5.5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a>
+          <a class="social-link js-social-tiktok" href="https://tiktok.com/@akfashion" aria-label="Twitter"><svg viewBox="0 0 24 24"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"/></svg></a>
+          <a class="social-link js-social-youtube" href="#" aria-label="YouTube"><svg viewBox="0 0 24 24"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z"/><polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02" fill="black"/></svg></a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Shop</h4>
+        <ul>
+          <li><a href="index.html#catalog">All Watches</a></li>
+          <li><a href="index.html#catalog">New Arrivals</a></li>
+          <li><a href="index.html#catalog">Best Sellers</a></li>
+          <li><a href="index.html#catalog">Limited Edition</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Company</h4>
+        <ul>
+          <li><a href="index.html#about">Our Story</a></li>
+          <li><a href="index.html#about">Heritage</a></li>
+          <li><a href="index.html">Sustainability</a></li>
+          <li><a href="index.html">Careers</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Support</h4>
+        <ul>
+          <li><a href="contact.html">Contact Us</a></li>
+          <li><a href="index.html">Shipping</a></li>
+          <li><a href="index.html">Returns</a></li>
+          <li><a href="index.html">Warranty</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Get In Touch</h4>
+        <div class="contact-item">
+          <svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          <span>42 Rue du Rhône<br/>1204 Geneva, Switzerland</span>
+        </div>
+        <div class="contact-item">
+          <svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          <span>+41 22 555 0100</span>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2024 AKFASHION. All Rights Reserved. Crafted with passion in Switzerland.</p>
+      <div class="payment-methods">
+        <span class="payment-icon">VISA</span>
+        <span class="payment-icon">MC</span>
+        <span class="payment-icon">AMEX</span>
+        <span class="payment-icon">PAYPAL</span>
+        <span class="payment-icon">APPLE</span>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<div class="cart-overlay" id="cartOverlay" onclick="toggleCart()"></div>
+<aside class="cart-drawer" id="cartDrawer">
+  <div class="cart-header">
+    <div class="cart-title">Shopping Cart <span class="count" id="cartDrawerCount">0</span></div>
+    <button class="cart-close" onclick="toggleCart()">
+      <svg viewBox="0 0 24 24"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+    </button>
+  </div>
+  <div class="cart-body" id="cartBody"></div>
+  <div class="cart-footer" id="cartFooter"></div>
+</aside>
+
+<div class="toast" id="toast">
+  <div class="toast-icon">
+    <svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>
+  </div>
+  <div class="toast-text">
+    <strong id="toastTitle">Message Sent</strong>
+    <span id="toastMessage">Thank you for contacting us</span>
+  </div>
+</div>
+
+<script src="js/products.js"></script>
+<script src="js/config.js"></script>
+<script src="js/settings.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>

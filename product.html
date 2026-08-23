@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0" />
+<meta name="description" content="AKFASHION - Premium luxury timepieces. View full details of our exclusive handcrafted watches." />
+<title>AKFASHION — Product Details</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&family=Inter:wght@300;400;500;600;700&family=Cormorant+Garamond:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/product.css">
+</head>
+<body>
+
+<div id="loader">
+  <div class="loader-logo">AKFASHION</div>
+  <div class="loader-bar"></div>
+</div>
+
+<header class="header" id="header">
+  <div class="header-inner">
+    <a href="index.html" class="logo">AKFASHION</a>
+    <nav class="nav">
+      <a href="index.html#home">Home</a>
+      <a href="index.html#catalog">Collection</a>
+      <a href="index.html#about">Heritage</a>
+      <a href="index.html#testimonials">Reviews</a>
+      <a href="index.html#contact">Contact</a>
+    </nav>
+    <div class="header-actions">
+      <button class="icon-btn" onclick="toggleSearch()" aria-label="Search">
+        <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+      </button>
+      <button class="icon-btn" aria-label="Wishlist">
+        <svg viewBox="0 0 24 24"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+      </button>
+      <button class="icon-btn" onclick="toggleCart()" aria-label="Cart">
+        <svg viewBox="0 0 24 24"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
+        <span class="cart-count" id="cartCount">0</span>
+      </button>
+      <button class="icon-btn menu-toggle" onclick="toggleMobileMenu()" aria-label="Menu">
+        <svg viewBox="0 0 24 24"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+<div class="search-overlay" id="searchOverlay" onclick="closeSearchOverlay(event)">
+  <div class="search-container">
+    <div class="search-wrap">
+      <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+      <input type="text" class="search-input" id="searchInput" placeholder="Search for watches, collections, brands..." oninput="handleSearch(this.value)" />
+      <button class="search-close" onclick="toggleSearch()">✕</button>
+    </div>
+    <div class="search-suggestions">
+      <span onclick="location.href='index.html#catalog'">Chronograph</span>
+      <span onclick="location.href='index.html#catalog'">Automatic</span>
+      <span onclick="location.href='index.html#catalog'">Diving</span>
+      <span onclick="location.href='index.html#catalog'">Skeleton</span>
+      <span onclick="location.href='index.html#catalog'">GMT</span>
+      <span onclick="location.href='index.html#catalog'">Limited Edition</span>
+    </div>
+  </div>
+</div>
+
+<div class="mobile-menu" id="mobileMenu">
+  <div class="mobile-menu-header">
+    <span class="logo">AKFASHION</span>
+    <button class="mobile-menu-close" onclick="toggleMobileMenu()">
+      <svg viewBox="0 0 24 24"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+    </button>
+  </div>
+  <nav class="mobile-nav">
+    <a href="index.html#home">Home</a>
+    <a href="index.html#catalog">Collection</a>
+    <a href="index.html#about">Heritage</a>
+    <a href="index.html#testimonials">Reviews</a>
+    <a href="index.html#contact">Contact</a>
+  </nav>
+  <div class="mobile-menu-footer">
+    <p style="color:var(--gray);font-size:0.85rem;">Follow Us</p>
+    <div class="mobile-menu-social">
+      <a class="social-link" href="#" aria-label="Instagram"><svg viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5" ry="5" fill="none" stroke="white" stroke-width="1.5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" fill="none" stroke="white" stroke-width="1.5"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5" stroke="white" stroke-width="1.5"/></svg></a>
+      <a class="social-link" href="#" aria-label="Facebook"><svg viewBox="0 0 24 24"><path d="M18 2h-3a5.5 5.5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a>
+      <a class="social-link" href="#" aria-label="Twitter"><svg viewBox="0 0 24 24"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"/></svg></a>
+    </div>
+  </div>
+</div>
+
+<div class="product-page-wrap">
+  <div class="section-inner">
+    <div class="breadcrumb" id="breadcrumb">
+      <a href="index.html">Home</a> <span>/</span> <a href="index.html#catalog">Collection</a> <span>/</span> <span id="breadcrumbCurrent">Product</span>
+    </div>
+  </div>
+
+  <section class="product-detail-section">
+    <div class="section-inner">
+      <div class="product-detail-grid" id="productDetail">
+        <!-- populated by js/product.js -->
+      </div>
+    </div>
+  </section>
+
+  <section class="suggestions-section">
+    <div class="section-inner">
+      <div class="section-head reveal in">
+        <span class="section-eyebrow">You May Also Like</span>
+        <h2 class="section-title">More <span class="gold">Timepieces</span> to Explore</h2>
+        <p class="section-desc">Handpicked suggestions from our collection, based on the watch you're viewing.</p>
+      </div>
+      <div class="products-grid" id="suggestionsGrid"></div>
+    </div>
+  </section>
+</div>
+
+<footer class="footer" id="contact">
+  <div class="footer-inner">
+    <div class="footer-grid">
+      <div class="footer-col">
+        <span class="footer-logo">AKFASHION</span>
+        <p class="footer-about">Crafting timeless luxury timepieces since 1974. Every AKFASHION watch is a masterwork of precision, heritage, and uncompromising elegance.</p>
+        <div class="social-links">
+          <a class="social-link" href="#" aria-label="Instagram"><svg viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5" ry="5" fill="none" stroke="white" stroke-width="1.5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" fill="none" stroke="white" stroke-width="1.5"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5" stroke="white" stroke-width="1.5"/></svg></a>
+          <a class="social-link" href="#" aria-label="Facebook"><svg viewBox="0 0 24 24"><path d="M18 2h-3a5.5 5.5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a>
+          <a class="social-link" href="#" aria-label="Twitter"><svg viewBox="0 0 24 24"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"/></svg></a>
+          <a class="social-link" href="#" aria-label="YouTube"><svg viewBox="0 0 24 24"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z"/><polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02" fill="black"/></svg></a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Shop</h4>
+        <ul>
+          <li><a href="index.html#catalog">All Watches</a></li>
+          <li><a href="index.html#catalog">New Arrivals</a></li>
+          <li><a href="index.html#catalog">Best Sellers</a></li>
+          <li><a href="index.html#catalog">Limited Edition</a></li>
+          <li><a href="index.html#catalog">Gift Cards</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Company</h4>
+        <ul>
+          <li><a href="index.html#about">Our Story</a></li>
+          <li><a href="index.html#about">Heritage</a></li>
+          <li><a href="index.html">Sustainability</a></li>
+          <li><a href="index.html">Careers</a></li>
+          <li><a href="index.html">Press</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Support</h4>
+        <ul>
+          <li><a href="index.html#contact">Contact Us</a></li>
+          <li><a href="index.html">Shipping</a></li>
+          <li><a href="index.html">Returns</a></li>
+          <li><a href="index.html">Warranty</a></li>
+          <li><a href="index.html">FAQ</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Get In Touch</h4>
+        <div class="contact-item">
+          <svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          <span>42 Rue du Rhône<br/>1204 Geneva, Switzerland</span>
+        </div>
+        <div class="contact-item">
+          <svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          <span>+41 22 555 0100</span>
+        </div>
+        <div class="contact-item">
+          <svg viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          <span class="js-contact-email">concierge@akfashion.com</span>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2024 AKFASHION. All Rights Reserved. Crafted with passion in Switzerland.</p>
+      <div class="payment-methods">
+        <span class="payment-icon">VISA</span>
+        <span class="payment-icon">MC</span>
+        <span class="payment-icon">AMEX</span>
+        <span class="payment-icon">PAYPAL</span>
+        <span class="payment-icon">APPLE</span>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<div class="cart-overlay" id="cartOverlay" onclick="toggleCart()"></div>
+<aside class="cart-drawer" id="cartDrawer">
+  <div class="cart-header">
+    <div class="cart-title">Shopping Cart <span class="count" id="cartDrawerCount">0</span></div>
+    <button class="cart-close" onclick="toggleCart()">
+      <svg viewBox="0 0 24 24"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+    </button>
+  </div>
+  <div class="cart-body" id="cartBody"></div>
+  <div class="cart-footer" id="cartFooter"></div>
+</aside>
+
+<div class="toast" id="toast">
+  <div class="toast-icon">
+    <svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>
+  </div>
+  <div class="toast-text">
+    <strong id="toastTitle">Added to Cart</strong>
+    <span id="toastMessage">Item has been added successfully</span>
+  </div>
+</div>
+
+<script src="js/products.js"></script>
+<script src="js/config.js"></script>
+<script src="js/settings.js"></script>
+<script src="js/script.js"></script>
+<script src="js/product.js"></script>
+</body>
+</html>
