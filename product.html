@@ -25,6 +25,7 @@
       <a href="index.html#home">Home</a>
       <a href="index.html#catalog">Collection</a>
       <a href="index.html#about">Heritage</a>
+      <a href="index.html#testimonials">Reviews</a>
       <a href="index.html#contact">Contact</a>
     </nav>
     <div class="header-actions">
@@ -74,6 +75,7 @@
     <a href="index.html#home">Home</a>
     <a href="index.html#catalog">Collection</a>
     <a href="index.html#about">Heritage</a>
+    <a href="index.html#testimonials">Reviews</a>
     <a href="index.html#contact">Contact</a>
   </nav>
   <div class="mobile-menu-footer">
@@ -196,63 +198,6 @@
   <div class="cart-body" id="cartBody"></div>
   <div class="cart-footer" id="cartFooter"></div>
 </aside>
-
-<div class="buynow-overlay" id="buyNowOverlay" onclick="closeBuyNow(event)">
-  <div class="buynow-modal" onclick="event.stopPropagation()">
-    <button class="buynow-close" onclick="closeBuyNow()" aria-label="Close">
-      <svg viewBox="0 0 24 24"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
-    </button>
-
-    <div id="buyNowFormView">
-      <div class="buynow-head">
-        <span class="buynow-eyebrow">Buy Now</span>
-        <h3 class="buynow-title">Complete Your Order</h3>
-      </div>
-
-      <div class="buynow-product" id="buyNowProductSummary"></div>
-
-      <form id="buyNowForm" onsubmit="submitBuyNow(event)">
-        <div class="buynow-field">
-          <label for="bnName">Full Name</label>
-          <input type="text" id="bnName" name="name" placeholder="Your full name" required />
-        </div>
-        <div class="buynow-field">
-          <label for="bnAddress">Address</label>
-          <input type="text" id="bnAddress" name="address" placeholder="House no., street, area" required />
-        </div>
-        <div class="buynow-row">
-          <div class="buynow-field">
-            <label for="bnCity">City</label>
-            <input type="text" id="bnCity" name="city" placeholder="City" required />
-          </div>
-          <div class="buynow-field">
-            <label for="bnPostal">Postal Code</label>
-            <input type="text" id="bnPostal" name="postal_code" placeholder="Postal code" required />
-          </div>
-        </div>
-        <div class="buynow-field">
-          <label for="bnWhatsapp">WhatsApp Number</label>
-          <input type="tel" id="bnWhatsapp" name="whatsapp" placeholder="e.g. 03001234567" required />
-        </div>
-
-        <div class="buynow-error" id="buyNowError"></div>
-
-        <button type="submit" class="btn btn-gold buynow-submit" id="buyNowSubmitBtn">
-          <span class="buynow-submit-label">Place Order</span>
-        </button>
-      </form>
-    </div>
-
-    <div id="buyNowSuccessView" class="buynow-success" style="display:none;">
-      <div class="buynow-success-icon">
-        <svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>
-      </div>
-      <h3>Order Placed!</h3>
-      <p>Thank you — we've received your order and will contact you shortly to confirm delivery and payment.</p>
-      <button class="btn btn-outline" onclick="closeBuyNow()">Done</button>
-    </div>
-  </div>
-</div>
 
 <div class="toast" id="toast">
   <div class="toast-icon">

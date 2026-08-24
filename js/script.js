@@ -39,8 +39,6 @@ function applySiteBranding(){
     });
   }
   if(st.faviconUrl){
-    const dialLogo = document.getElementById('logoImage');
-    if(dialLogo) dialLogo.src = st.faviconUrl;
     let link = document.querySelector("link[rel~='icon']");
     if(!link){ link = document.createElement('link'); link.rel='icon'; document.head.appendChild(link); }
     link.href = st.faviconUrl;
