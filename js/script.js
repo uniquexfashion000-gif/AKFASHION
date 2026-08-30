@@ -65,6 +65,20 @@ function applySiteBranding(){
     document.querySelectorAll('.js-whatsapp-link').forEach(a=>{ a.href = `https://wa.me/${cfg.whatsappNumber}?text=${msg}`; });
   }
   applyAboutSection(cfg.about);
+
+  // SEO: keep canonical/OG/Twitter URLs in sync with the admin-configured Site URL,
+  // and keywords in sync with the SEO Keywords field.
+  if(cfg.siteUrl){
+    const base = String(cfg.siteUrl).replace(/\/+$/, '');
+    const url = base + window.location.pathname;
+    const setAttr = (id, attr, val) => { const el = document.getElementById(id); if(el) el.setAttribute(attr, val); };
+    setAttr('canonicalLink','href', url);
+    setAttr('ogUrl','content', url);
+  }
+  if(cfg.seoKeywords){
+    const kw = document.getElementById('metaKeywords');
+    if(kw) kw.setAttribute('content', cfg.seoKeywords);
+  }
 }
 document.addEventListener('config:ready', applySiteBranding);
 document.addEventListener('settings:ready', applySiteBranding);
@@ -599,6 +613,7 @@ document.addEventListener('keydown',(e)=>{
 document.querySelectorAll('a[href^="#"]').forEach(a=>{
   a.addEventListener('click',function(e){
     const href = this.getAttribute('href');
+    if(!href || !href.startsWith('#')) return; // link's href was later replaced (e.g. social icons) - let it navigate normally
     if(href === '#') return;
     e.preventDefault();
     const target = document.querySelector(href);

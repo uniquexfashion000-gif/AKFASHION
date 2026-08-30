@@ -38,6 +38,9 @@ function initProductPage(){
 }
 
 function renderProductNotFound(){
+  const metaRobots = document.getElementById('metaRobots');
+  if(metaRobots) metaRobots.setAttribute('content', 'noindex, follow');
+  document.title = 'Watch Not Found — AKFASHION';
   document.getElementById('productDetail').innerHTML = `
     <div class="product-not-found">
       <h2>Watch Not Found</h2>
@@ -57,8 +60,55 @@ function pdGetSlides(p){
   return slides;
 }
 
+function updateProductSEO(p){
+  const cfg = (typeof _siteConfig !== 'undefined') ? _siteConfig : {};
+  const base = String(cfg.siteUrl || 'https://www.akfashion.com').replace(/\/+$/, '');
+  const url = `${base}/product.html?id=${p.id}`;
+  const title = `${p.name} — AKFASHION`;
+  const shortDesc = (p.desc ? p.desc.replace(/\s+/g,' ').trim().slice(0,155) : `${p.name} by AKFASHION — ${p.category} luxury timepiece.`);
+  const image = (p.images && p.images[0]) ? `${base}/${p.images[0]}` : `${base}/images/logo-1787523819941.jpg`;
+
+  document.title = title;
+  const setAttr = (id, attr, val) => { const el = document.getElementById(id); if(el) el.setAttribute(attr, val); };
+  setAttr('metaDescription','content', shortDesc);
+  setAttr('canonicalLink','href', url);
+  setAttr('ogTitle','content', title);
+  setAttr('ogDescription','content', shortDesc);
+  setAttr('ogUrl','content', url);
+  setAttr('ogImage','content', image);
+  setAttr('twitterTitle','content', title);
+  setAttr('twitterDescription','content', shortDesc);
+  setAttr('twitterImage','content', image);
+  setAttr('metaRobots','content', 'index, follow');
+
+  const ld = document.getElementById('productJsonLd');
+  if(ld){
+    ld.textContent = JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "Product",
+      "name": p.name,
+      "image": (p.images||[]).map(img => `${base}/${img}`),
+      "description": shortDesc,
+      "sku": p.sku,
+      "brand": { "@type": "Brand", "name": p.brand || "AKFASHION" },
+      "aggregateRating": p.reviews > 0 ? {
+        "@type": "AggregateRating",
+        "ratingValue": p.rating,
+        "reviewCount": p.reviews
+      } : undefined,
+      "offers": {
+        "@type": "Offer",
+        "url": url,
+        "priceCurrency": "PKR",
+        "price": p.price,
+        "availability": "https://schema.org/InStock"
+      }
+    });
+  }
+}
+
 function renderProductDetail(p){
-  document.title = `${p.name} — AKFASHION`;
+  updateProductSEO(p);
   const crumb = document.getElementById('breadcrumbCurrent');
   if(crumb) crumb.textContent = p.name;
 

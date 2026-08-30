@@ -1,0 +1,25 @@
+# AKFASHION robots.txt
+# Generated automatically from the admin panel's Site URL setting.
+
+User-agent: *
+Allow: /
+Disallow: /admin/
+Disallow: /api/
+
+# Explicitly make sure Google (including Google Images) can always
+# crawl the favicon and other site images.
+User-agent: Googlebot
+Allow: /images/
+Allow: /favicon.ico
+Allow: /*.ico$
+Allow: /*.png$
+Allow: /*.jpg$
+Allow: /*.jpeg$
+Allow: /*.webp$
+Allow: /*.svg$
+
+User-agent: Googlebot-Image
+Allow: /images/
+Allow: /favicon.ico
+
+Sitemap: https://www.akfashion.com/sitemap.xml
